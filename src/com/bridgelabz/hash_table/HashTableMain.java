@@ -1,7 +1,7 @@
 package com.bridgelabz.hash_table;
 
 /**
- * Purpose  - Ability to find frequency of words in large paragraph
+ * Purpose  - To remove avoidable word from phrase
  * @author  - Utkarsh Mishra
  * @version - 16.0
  * @since   - 2021-09-27
@@ -26,6 +26,7 @@ public class HashTableMain {
                 count = count + 1;
             hashTable.add(word, count);
         }
+        hashTable.remove("avoidable");
         System.out.println(hashTable);
     }
 }
